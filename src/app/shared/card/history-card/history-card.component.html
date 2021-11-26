@@ -1,0 +1,26 @@
+<div class="card card-default bg-dark text-white">
+    <div class="card-body">
+        <div class="form-group">
+            <h3>Histórico</h3>
+            <div class="table-scroll">
+                <table class="table table-sm table-dark table-scroll">
+                    <thead>
+                        <tr>
+                            <th>Escolhido</th>
+                            <th>Data</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor=" let draw of arrayDraws">
+                            <td>{{draw.choosen}}</td>
+                            <td>{{draw.date}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+
+        </div>
+    </div>
+</div>

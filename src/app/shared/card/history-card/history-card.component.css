@@ -1,0 +1,11 @@
+.button-standart{
+    color: #ffffff ;
+    background-color: #165C7D   ;
+   }
+
+
+   .table-scroll {
+    height: 250px;
+    max-height:250px;
+    overflow-y:auto;
+}
