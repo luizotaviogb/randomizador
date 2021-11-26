@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="col">
+        <div class="card card-default">
+            <div class="card-body">
+                <div class="form-group">
+                    <h3>Informe os valores a serem sorteados</h3>
+                    <textarea matInput class="form-control" id="drawList" rows="10" [(ngModel)]="drawList"></textarea>
+                </div>
+            </div>
+        </div>
+        <button class=" btn btn-primary btn-lg button-standart my-3" (click)="draw()">Sortear</button>
+        <button class="btn btn-outline-primary btn-lg mx-2 button-standart" (click)="clean()">Limpar dados</button>
+    </div>
+    <div class="col">
+        <div class="col">
+            <app-final-card [choosen]="this.drawObject.choosen"></app-final-card>
+        </div>
+    </div>
+</div>

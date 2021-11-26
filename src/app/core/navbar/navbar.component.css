@@ -1,0 +1,19 @@
+
+  /* CLASS BUTTON */
+
+  .button-rounded-standart{
+    width: 109px;
+    height: 32px;
+    right: 76px;
+    top: calc(50% - 32px/2 - 0.5px);
+    
+    background: #FFFFFF;
+    border: 1px solid #125D79;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    color: #165C7D ;
+    font-weight: bold;
+    font-size:18px;
+    
+  }

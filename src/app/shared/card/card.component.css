@@ -1,0 +1,87 @@
+.card {
+    z-index: 0;
+    background-color: #ECEFF1;
+    padding-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 90px;
+    border-radius: 10px
+}
+
+.top {
+    padding-top: 40px;
+    padding-left: 13% !important;
+    padding-right: 13% !important
+}
+
+
+
+
+
+
+  /* CSS CONTAINER */
+
+  .content-container {
+    padding-left: 95px;
+  }
+
+
+
+  /* CLASS BUTTON */
+
+  .btn-default{
+    width: 109px;
+    height: 32px;
+    right: 76px;
+    top: calc(50% - 32px/2 - 0.5px);
+    
+    background: #FFFFFF;
+    border: 1px solid #125D79;
+    box-sizing: border-box;
+    border-radius: 15px;
+  }
+
+
+.body-default{
+    background-color:#E7EEF1;
+}
+
+/* CSS CARD */
+
+.card-default{
+    height: 250px;
+    background-color: #fff;
+    border-radius: 0%;
+}
+
+.body-content{
+    margin-left: 50px;
+    
+}
+
+
+.content-container {
+  padding-left: 95px;
+}
+
+
+.button-standart{
+  color: #ffffff ;
+  background-color: #165C7D   ;
+ }
+
+/* CLASS BUTTON */
+
+.btn-default{
+  width: 109px;
+  height: 32px;
+  right: 76px;
+  top: calc(50% - 32px/2 - 0.5px);
+  
+  background: #FFFFFF;
+  border: 1px solid #125D79;
+  box-sizing: border-box;
+  border-radius: 15px;
+} 
+
+
+
