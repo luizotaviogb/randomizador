@@ -7,7 +7,7 @@
     left: 0;
     overflow-x: hidden;
     overflow-y: auto;
-    background: #165C7D;
+    background:grey;
     color: #000;
   }
   
@@ -59,7 +59,7 @@
   .sidebar-navigation .header {
     font-size: 12px;
     text-transform: uppercase;
-    background-color: #165C7D;
+    background-color:grey;
     padding: 10px 0px 10px 0px;
   }
   

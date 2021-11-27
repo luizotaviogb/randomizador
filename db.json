@@ -1,9 +1,17 @@
 {
-    "draws": [
-        {
-            "id": "",
-            "choosen": "",
-            "drawList": []
-        }
-    ]
+  "draws": [
+    {
+      "choosen": "Pedro",
+      "drawList": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f"
+      ],
+      "date": "26/11/2021 10:18:20",
+      "id": "rV0thFO"
+    }
+  ]
 }

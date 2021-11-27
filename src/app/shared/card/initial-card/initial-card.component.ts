@@ -45,7 +45,7 @@ export class InitialCardComponent implements OnInit {
   }
 
   getLines(list: any) {
-    let lines = list.split("\n");
+    let lines = list.split("," || "\n");
     let nonEmptyLines = lines.filter((linha: string) => linha.trim())
     this.drawObject.drawList = nonEmptyLines;
   }

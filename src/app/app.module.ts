@@ -10,7 +10,8 @@ import { CardComponent } from './shared/card/card.component';
 import { InitialCardComponent } from './shared/card/initial-card/initial-card.component';
 import { FinalCardComponent } from './shared/card/final-card/final-card.component';
 import { FormsModule } from '@angular/forms';
-
+import { HistoryCardComponent } from './shared/card/history-card/history-card.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,12 +21,14 @@ import { FormsModule } from '@angular/forms';
     SidebarComponent,
     CardComponent,
     InitialCardComponent,
-    FinalCardComponent
+    FinalCardComponent,
+    HistoryCardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
