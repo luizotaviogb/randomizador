@@ -1,7 +1,9 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, ComponentFactoryResolver, OnInit } from '@angular/core';
 import { Draw } from 'src/app/models/draw';
 import { env } from 'env';
+import { isNgTemplate } from '@angular/compiler';
+import { TestBed } from '@angular/core/testing';
 @Component({
   selector: 'app-initial-card',
   templateUrl: './initial-card.component.html',
@@ -25,7 +27,9 @@ export class InitialCardComponent implements OnInit {
   }
 
   draw() {
-    this.getLines(this.drawList);
+    let cleanString = ("" + this.drawList).replace(/, /g, "\n");
+    cleanString = cleanString.replace(/,/g, "\n");
+    this.getLines(cleanString);
     let length = this.drawObject?.drawList?.length
     this.drawObject.choosen = this.drawObject?.drawList ? this.drawObject?.drawList[this.getRandomIndex(1, length)] : undefined
     console.log(this.drawObject)
@@ -45,7 +49,7 @@ export class InitialCardComponent implements OnInit {
   }
 
   getLines(list: any) {
-    let lines = list.split("," || "\n");
+    let lines = list.split("\n");
     let nonEmptyLines = lines.filter((linha: string) => linha.trim())
     this.drawObject.drawList = nonEmptyLines;
   }
