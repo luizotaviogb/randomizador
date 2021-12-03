@@ -1,9 +1,7 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, ComponentFactoryResolver, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Draw } from 'src/app/models/draw';
 import { env } from 'env';
-import { isNgTemplate } from '@angular/compiler';
-import { TestBed } from '@angular/core/testing';
 @Component({
   selector: 'app-initial-card',
   templateUrl: './initial-card.component.html',
@@ -31,7 +29,7 @@ export class InitialCardComponent implements OnInit {
     cleanString = cleanString.replace(/,/g, "\n");
     this.getLines(cleanString);
     let length = this.drawObject?.drawList?.length
-    this.drawObject.choosen = this.drawObject?.drawList ? this.drawObject?.drawList[this.getRandomIndex(1, length)] : undefined
+    this.drawObject.choosen = this.drawObject?.drawList ? this.drawObject?.drawList[this.getRandomIndex(0, length)] : undefined
     console.log(this.drawObject)
     this.save(this.drawObject);
   }
@@ -39,7 +37,7 @@ export class InitialCardComponent implements OnInit {
   getRandomIndex(min: number, max: any) {
     min = Math.ceil(min);
     max = Math.floor(max);
-    return (Math.floor(Math.random() * (max - min + 1)) + min) - 1;
+    return (Math.floor(Math.random() * (max - min + 1)) + min);
   }
 
   clean() {
